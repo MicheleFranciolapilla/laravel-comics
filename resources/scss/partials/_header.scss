@@ -11,11 +11,11 @@
 nav
 {
     height: $nav_height;
-    align-items: center;
 
     img
     {
         height: 80%;
+        align-self: center;
     }
 
     #nav_menu
@@ -28,13 +28,24 @@ nav
             height: 100%;
             display: flex;
             align-items: center;
-            border-bottom: 3px solid yellow;
+            border-bottom: $menu_border_thickness solid transparent;
             font-size: large;
+            line-height: $nav_height;
 
             a
             {
                 color: $comics_bg_color;
                 font-weight: 600;
+            }
+
+            &.active
+            {
+                border-color: blue;
+
+                a
+                {
+                    color: blue;
+                } 
             }
         } 
     }

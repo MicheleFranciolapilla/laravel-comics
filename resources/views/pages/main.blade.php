@@ -15,9 +15,13 @@
 @endsection
 
 @section('nav_menu_content')
-    @foreach($menu['header']['nav_complete'] as $menu_item)
-        <li>
-            <a href="#">{{ $menu_item }}</a>
-        </li>
+    @foreach($menu['header']['nav_complete'] as $index => $menu_item)
+        @if ($loop->first)
+            <li class="active">
+        @else
+            <li>
+        @endif
+                <a href="#">{{ $menu_item }}</a>
+            </li>
     @endforeach
 @endsection
