@@ -15,7 +15,7 @@
 @endsection
 
 @section('nav_menu_content')
-    @foreach($menu['header']['nav_complete'] as $index => $menu_item)
+    @foreach($menu['header']['nav'] as $index => $menu_item)
         @if ($loop->first)
             <li class="active">
         @else

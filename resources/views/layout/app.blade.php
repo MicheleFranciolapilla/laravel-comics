@@ -31,6 +31,13 @@
         @include('partials.jumbotron')
     </header>
 
+    <footer>
+        <div id="upper_footer">
+            <div id="footer_menu_box" class="central">
+            </div>
+        </div>
+        <div id="lower_footer">
+        </div>
+    </footer>
 </body>
-
 </html>

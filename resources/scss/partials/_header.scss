@@ -11,18 +11,15 @@
 nav
 {
     height: $nav_height;
-
     img
     {
         height: 80%;
         align-self: center;
     }
-
     #nav_menu
     {
         flex-grow: 1;
         height: 100%;
-
         li
         {
             height: 100%;
@@ -31,17 +28,14 @@ nav
             border-bottom: $menu_border_thickness solid transparent;
             font-size: large;
             line-height: $nav_height;
-
             a
             {
                 color: $comics_bg_color;
                 font-weight: 600;
             }
-
             &.active
             {
                 border-color: blue;
-
                 a
                 {
                     color: blue;

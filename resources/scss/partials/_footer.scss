@@ -1,0 +1,11 @@
+#upper_footer
+{
+    min-height: $footer_bg_height;
+    background-image: url('../img/footer-bg.jpg');
+    position: relative;
+    #footer_menu_box
+    {
+        height: calc(100% - $footer_height);
+
+    }
+}
