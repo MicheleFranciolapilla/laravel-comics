@@ -2,6 +2,17 @@
 @import './partials/_variables';
 @import './partials/_header';
 
+ul
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
 .central
 {
     width: $block_width;

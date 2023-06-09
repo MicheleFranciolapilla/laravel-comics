@@ -18,13 +18,17 @@
 <body>
     <header>
         <div id="upper_header">
-            <div class="central d-flex justify-content-end">
+            <ul class="central d-flex justify-content-end column-gap-4">
                 @yield('upper_header_content')
-            </div>
+            </ul>
         </div>
+        <nav class="central d-flex justify-content-between">
+            
+            <ul id="nav_menu" class="d-flex justify-content-between">
+                @yield('nav_menu_content')
+            </ul>
+        </nav>
     </header>
-
-    <h1 class="text-primary text-center">LAYOUT FILE</h1>
 
 </body>
 

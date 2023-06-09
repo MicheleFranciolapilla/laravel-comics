@@ -10,6 +10,18 @@
                                                                                     "upper_header"  =>  [
                                                                                                             "DC POWER VISA",
                                                                                                             "ADDITIONAL DC SITES"
+                                                                                                        ],
+                                                                                    "nav_complete"  =>  [
+                                                                                                            "CHARACTERS",
+                                                                                                            "COMICS",
+                                                                                                            "MOVIES",
+                                                                                                            "TV",
+                                                                                                            "GAMES",
+                                                                                                            "COLLECTIBLES",
+                                                                                                            "VIDEOS",
+                                                                                                            "FANS",
+                                                                                                            "NEWS",
+                                                                                                            "SHOP"
                                                                                                         ]
                                                                                 ]
                                                             ]
