@@ -22,12 +22,13 @@
                 @yield('upper_header_content')
             </ul>
         </div>
-        <nav class="central d-flex justify-content-between">
-            
-            <ul id="nav_menu" class="d-flex justify-content-between">
+        <nav class="central d-flex justify-content-between px-2">
+            <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo piccolo">
+            <ul id="nav_menu" class="d-flex justify-content-between px-5">
                 @yield('nav_menu_content')
             </ul>
         </nav>
+        @include('partials.jumbotron')
     </header>
 
 </body>
