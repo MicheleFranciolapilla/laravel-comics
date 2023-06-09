@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages.main');
-});
+    $title  = config('project_data.menus_and_titles.titles.main');
+    $menu   = config('project_data.menus_and_titles.menus.standard');
+    return view('pages.main', compact('title', 'menu'));
+})->name('main');

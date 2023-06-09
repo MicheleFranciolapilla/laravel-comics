@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>DC Comics with Laravel</title>
+    <title>@yield('page_title')</title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,8 +16,13 @@
 </head>
 
 <body>
-
-    @include(' partials.header ')
+    <header>
+        <div id="upper_header">
+            <div class="central d-flex justify-content-end">
+                @yield('upper_header_content')
+            </div>
+        </div>
+    </header>
 
     <h1 class="text-primary text-center">LAYOUT FILE</h1>
 
