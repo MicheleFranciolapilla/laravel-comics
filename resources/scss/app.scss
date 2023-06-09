@@ -1,1 +1,9 @@
 @import '~bootstrap/scss/bootstrap';
+@import './partials/_variables';
+@import './partials/_header';
+
+.central
+{
+    width: $block_width;
+    margin: 0 auto;
+}

@@ -17,6 +17,8 @@
 
 <body>
 
+    @include(' partials.header ')
+
     <h1 class="text-primary text-center">LAYOUT FILE</h1>
 
 </body>
