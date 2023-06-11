@@ -7,10 +7,6 @@
 
     <title>@yield('page_title')</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
     @vite('resources/js/app.js')
 
 </head>
@@ -31,7 +27,12 @@
         @include('partials.jumbotron')
     </header>
     <main>
-
+        @yield('main_section')
+        <div id="icons_menu_area" class="p-3">
+            <ul id="icons_menu_list" class="central d-flex align-items-center px-5">
+                @yield('icons_menu_content')
+            </ul>
+        </div>
     </main>
     <footer>
         <div id="upper_footer">
@@ -40,7 +41,12 @@
                     @yield('upper_footer_menu_content')
                 </ul>
                 <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="logo inclinato">
-                <p>All site content TM and &copy; 2020 DC Entertainement, unless otherwise <a href="#">noted here</a>. All rights reserved. <a href="#">Cookies Settings</a></p>
+                <p>
+                    All site content TM and &copy; 2020 DC Entertainement, unless otherwise 
+                    <a href="#">noted here</a>. 
+                    All rights reserved. 
+                    <a href="#">Cookies Settings</a>
+                </p>
             </div>
         </div>
         <div id="lower_footer" class="py-4">

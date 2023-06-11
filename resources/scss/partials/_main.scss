@@ -1,4 +1,99 @@
 main
 {
     position: relative;
+    z-index: 999;
+    #comics_area
+    {
+        min-height: $comics_area_height;
+        background-color: $comics_bg_color;
+        #card_set
+        {
+            display: flex;
+            flex-wrap: wrap;
+            gap: $cards_gap;
+            height: calc(100%);
+            .card
+            {
+                width: calc((100% - (($cards_per_row - 1) * $cards_gap)) / $cards_per_row);
+                padding: 0.5rem;
+                color: black;
+                border: 3px solid transparent;
+                img
+                {
+                    width: 100%;
+                    aspect-ratio: 1;
+                    margin-bottom: 0.5rem;
+                } 
+                &:hover
+                {
+                    color: yellowgreen;
+                    border-color: yellowgreen;
+                }
+            }
+        }
+    }
+    #middle_section
+    {
+        height: $middle_section_height;
+        background-color: $comics_bg_color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a
+        {
+            padding: 0.5rem 1rem;
+            border: 3px solid white;
+            &:hover
+            {
+                border-color: yellowgreen;
+                color: yellowgreen;
+            }
+        } 
+    }
+    #icons_menu_area
+    {
+        height: $central_menu_height;
+        background-color: $central_color;
+        #icons_menu_list
+        {
+            padding: 0 1rem;
+            height: 100%;
+            justify-content: space-between;
+            li
+            {
+                height: 100%;
+                a
+                {
+                    height: 100%;
+                    align-items: center;
+                    gap: 1rem;
+                    img
+                    {
+                        height: 75%;
+                        &.special
+                        {
+                            height: 50%;
+                        }
+                    } 
+                }
+                &:hover
+                {
+                    a
+                    {
+                        img
+                        {
+                            filter: invert(73%) sepia(34%) saturate(826%) hue-rotate(35deg) brightness(95%) contrast(93%);
+                        } 
+                        span
+                        {
+                            // color: yellowgreen;
+                            filter: invert(73%) sepia(34%) saturate(826%) hue-rotate(35deg) brightness(95%) contrast(93%);
+
+                        } 
+                    } 
+                }
+
+            } 
+        }
+    }
 }

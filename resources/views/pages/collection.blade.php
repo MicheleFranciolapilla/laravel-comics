@@ -27,8 +27,18 @@
 @endsection
 
 @section('main_section')
+    <div id="comics_area">
+        <div id="card_set" class="central py-4">
+            @foreach($comics_db as $item)
+                <a href="#" class="card">
+                    <img src="{{ $item['thumb'] }}" alt="">
+                    <h6>{{ $item['title'] }}</h6>
+                </a>
+            @endforeach
+        </div>
+    </div>
     <div id="middle_section">
-        <a href="{{ route('collection') }}"> Go to DC Collection</a>
+        <a href="{{ route('main') }}"> Go back to HOME PAGE</a>
     </div>
 @endsection
 
