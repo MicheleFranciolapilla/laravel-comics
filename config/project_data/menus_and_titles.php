@@ -70,7 +70,7 @@
                                                                                                                                         ],
                                                                                                         ],
                                                                                     "lower_footer"  =>  [
-                                                                                                            "SIGN-UP NOW!",
+                                                                                                            "SIGN-UP NOW!"          =>  [],
                                                                                                             "FOLLOW US"             =>  [
                                                                                                                                             "footer-facebook.png",
                                                                                                                                             "footer-twitter.png",

@@ -30,16 +30,23 @@
         </nav>
         @include('partials.jumbotron')
     </header>
+    <main>
 
+    </main>
     <footer>
         <div id="upper_footer">
             <div id="footer_inner_box" class="central">
                 <ul id="footer_vertical_menu">
                     @yield('upper_footer_menu_content')
                 </ul>
+                <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="logo inclinato">
+                <p>All site content TM and &copy; 2020 DC Entertainement, unless otherwise <a href="#">noted here</a>. All rights reserved. <a href="#">Cookies Settings</a></p>
             </div>
         </div>
-        <div id="lower_footer">
+        <div id="lower_footer" class="py-4">
+            <ul id="lower_footer_list" class="central px-0">
+                @yield('lower_footer_menu_content')
+            </ul>
         </div>
     </footer>
 </body>

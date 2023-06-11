@@ -40,3 +40,24 @@
         </li>
     @endforeach
 @endsection 
+
+@section('lower_footer_menu_content')
+    @foreach($menu['footer']['lower_footer'] as $menu_item => $sub_menu)
+        <li>
+            @if ($loop->first)
+                <a href="#">{{ $menu_item }}</a>
+            @else
+                <span>{{ $menu_item }}</span>
+                <ul id="social_menu">
+                    @foreach($sub_menu as $social_icon)
+                        <li>
+                            <a href="#">
+                                <img src="{{ Vite::asset('resources/img/' . $social_icon) }}" alt="{{ $social_icon }}">
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
+            @endif
+        </li>
+    @endforeach
+@endsection
