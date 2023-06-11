@@ -32,18 +32,19 @@
     </div>
 @endsection
 
-
 @section('icons_menu_content')
-    @foreach($menu['main']['icons_menu'] as $icons_menu_name => $icons_menu_item)
-        <li>
-            <a href="#" class="d-flex flex-row text-white">
-                <img src="{{ Vite::asset('resources/img/' . $icons_menu_item) }}" alt=""
-                 class="@if ($loop->last) special @endif"
-                >
-                <span>{{ $icons_menu_name }}</span>
-            </a>
-        </li>
-    @endforeach
+    <div id="icons_menu_area" class="p-3">
+        <ul id="icons_menu_list" class="central d-flex align-items-center px-5">
+            @foreach($menu['main']['icons_menu'] as $icons_menu_name => $icons_menu_item)
+                <li>
+                    <a href="#" class="d-flex flex-row text-white">
+                        <img src="{{ Vite::asset('resources/img/' . $icons_menu_item) }}" alt="" class="@if ($loop->last) special @endif">
+                        <span>{{ $icons_menu_name }}</span>
+                    </a>
+                </li>
+            @endforeach
+        </ul>
+    </div>
 @endsection
 
 @section('upper_footer_menu_content')

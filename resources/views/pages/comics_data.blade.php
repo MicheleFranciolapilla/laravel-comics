@@ -27,35 +27,11 @@
 @endsection
 
 @section('main_section')
-    <div id="comics_area">
-        <div id="card_set" class="central py-4">
-            @foreach($comics_db as $index => $item)
-                <div class="card">
-                    <a href="{{ route('comics_data') }}">
-                        <img src="{{ $item['thumb'] }}" alt="{{ $item['title'] }}">
-                        <h6>{{ $item['title'] }}</h6>
-                    </a>
-                </div>
-            @endforeach
-        </div>
+    <div id="icons_menu_area">
     </div>
     <div id="middle_section">
         <a href="{{ route('main') }}"> Go back to HOME PAGE</a>
-    </div>
-@endsection
-
-@section('icons_menu_content')
-    <div id="icons_menu_area" class="p-3">
-        <ul id="icons_menu_list" class="central d-flex align-items-center px-5">
-            @foreach($menu['main']['icons_menu'] as $icons_menu_name => $icons_menu_item)
-                <li>
-                    <a href="#" class="d-flex flex-row text-white">
-                        <img src="{{ Vite::asset('resources/img/' . $icons_menu_item) }}" alt="" class="@if ($loop->last) special @endif">
-                        <span>{{ $icons_menu_name }}</span>
-                    </a>
-                </li>
-            @endforeach
-        </ul>
+        <a href="{{ route('collection') }}"> Go back to COLLECTION</a>
     </div>
 @endsection
 

@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+use App\Http\Controllers\Card_Controller as Card_Controller;
+
 Route::get('/', function () 
 {
     $title  = config('project_data.menus_and_titles.titles.main');
@@ -27,3 +29,5 @@ Route::get('/collection', function()
     $comics_db  = config('project_data.comics');
     return view('pages.collection', compact('title', 'menu', 'comics_db'));
 })->name('collection');
+
+Route::get('/comics_data', [Card_Controller::class, 'get_method'])->name('comics_data');

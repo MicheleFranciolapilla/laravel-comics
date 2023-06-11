@@ -2,7 +2,8 @@
     return  [
                 "titles"        =>  [
                                         "main"          =>  "DC COMICS | Home",
-                                        "collection"    =>  "DC COMICS | Collection"
+                                        "collection"    =>  "DC COMICS | Collection",
+                                        "data"          =>  "DC COMICS | Comics Data"
                                     ],
                 "menus"         =>  [
                                         "standard"      =>  [

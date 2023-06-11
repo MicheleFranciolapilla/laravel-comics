@@ -16,18 +16,24 @@ main
             {
                 width: calc((100% - (($cards_per_row - 1) * $cards_gap)) / $cards_per_row);
                 padding: 0.5rem;
-                color: black;
-                border: 3px solid transparent;
+                border: 5px solid transparent;
                 img
                 {
                     width: 100%;
                     aspect-ratio: 1;
                     margin-bottom: 0.5rem;
                 } 
+                h6
+                {
+                    color: black;
+                } 
                 &:hover
                 {
-                    color: yellowgreen;
-                    border-color: yellowgreen;
+                    border-color: blue;
+                    h6
+                    {
+                        color: blue;
+                    } 
                 }
             }
         }
@@ -38,6 +44,7 @@ main
         background-color: $comics_bg_color;
         display: flex;
         justify-content: center;
+        gap: 2rem;
         align-items: center;
         a
         {

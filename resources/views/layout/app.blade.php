@@ -28,11 +28,7 @@
     </header>
     <main>
         @yield('main_section')
-        <div id="icons_menu_area" class="p-3">
-            <ul id="icons_menu_list" class="central d-flex align-items-center px-5">
-                @yield('icons_menu_content')
-            </ul>
-        </div>
+        @yield('icons_menu_content')
     </main>
     <footer>
         <div id="upper_footer">
