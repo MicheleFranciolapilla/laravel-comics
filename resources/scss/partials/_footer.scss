@@ -1,11 +1,49 @@
-#upper_footer
+footer
 {
-    min-height: $footer_bg_height;
-    background-image: url('../img/footer-bg.jpg');
-    position: relative;
-    #footer_menu_box
+    #upper_footer
     {
-        height: calc(100% - $footer_height);
-
+        height: $footer_bg_height;
+        background-image: url('../img/footer-bg.jpg');
+        background-size: cover;
+        #footer_inner_box
+        {
+            padding: 2.5rem 0;
+            display: flex;
+            height: 100%;
+            #footer_vertical_menu
+            {
+                display: flex;
+                gap: 1.5rem;
+                flex-flow: column wrap;
+                .outer_list_item
+                {
+                    font-size: large;
+                    font-weight: 800;
+                    a
+                    {
+                        color: white;
+                        &:hover
+                        {
+                            color: yellowgreen;
+                        }
+                    }
+                    .inner_list
+                    {
+                        padding: 1rem 0;
+                        margin-left: 0;
+                        font-size: medium;
+                        font-weight: 300;
+                        a
+                        {
+                            color: lightgrey;
+                            &:hover
+                            {
+                                color: yellow;
+                            }
+                        } 
+                    }
+                }
+            }
+        }
     }
 }

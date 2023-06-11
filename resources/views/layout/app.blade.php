@@ -33,7 +33,10 @@
 
     <footer>
         <div id="upper_footer">
-            <div id="footer_menu_box" class="central">
+            <div id="footer_inner_box" class="central">
+                <ul id="footer_vertical_menu">
+                    @yield('upper_footer_menu_content')
+                </ul>
             </div>
         </div>
         <div id="lower_footer">

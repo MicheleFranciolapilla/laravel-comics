@@ -25,3 +25,18 @@
             </li>
     @endforeach
 @endsection
+
+@section('upper_footer_menu_content')
+    @foreach($menu['footer']['upper_footer'] as $outer_index => $footer_menu)
+        <li class="outer_list_item">
+            <a href="#">{{ $outer_index }}</a>
+            <ul class="inner_list">
+                @foreach($footer_menu as $inner_index => $footer_menu_item)
+                    <li class="inner_list_item">
+                        <a href="#">{{ $footer_menu_item }}</a>
+                    </li>
+                @endforeach
+            </ul>
+        </li>
+    @endforeach
+@endsection 
