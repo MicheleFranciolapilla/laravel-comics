@@ -129,6 +129,18 @@ main
         #single_card
         {
             padding: 1.5rem 0;
+            #description_block
+            {
+                p
+                {
+                    width: 85%;
+                } 
+                img
+                {
+                    width: 13%;
+                    aspect-ratio: 2/3;
+                } 
+            }
             #artists, #writers
             {
                 width: 45%;

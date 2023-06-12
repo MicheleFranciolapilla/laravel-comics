@@ -41,7 +41,10 @@
                 <h6 class="py-1 px-2 border border-1 border-dark text-black bg-info">TYPE: <span class="text-secondary">{{ $single_data['type'] }}</span></h6>
                 <h6 class="py-1 px-2 border border-1 border-dark text-black bg-info">U.S. PRICE: <span class="text-secondary">{{ $single_data['price'] }}</span></h6>
             </div>
-            <p>{{ $single_data['description'] }}</p>
+            <div id="description_block" class="d-flex justify-content-between column-gap-3 w-100 p-2">
+                <p class="py-3">{{ $single_data['description'] }}</p>
+                <img src="{{ $single_data['thumb_bis'] }}" alt="">
+            </div>
             <hr>
             <h6 class="text-black">SALE DATE: <span class="text-secondary">{{ $single_data['sale_date'] }}</span></h6>
             <div id="authors" class="d-flex justify-content-between column-gap-3 w-100 border border-1 border-black rounded-1 p-2">
