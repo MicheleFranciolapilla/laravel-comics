@@ -105,7 +105,34 @@ main
     }
     #single_card_view
     {
-        min-height: $comics_area_height;
-        background-color: $comics_bg_color;
+        #blue_strip
+        {
+            height: calc($central_menu_height / 2);
+            background-color: $central_color;
+            position: relative;
+            #thumb
+            {
+                width: 200px;
+                border: 3px solid white;
+                position: absolute;
+                bottom: calc($central_menu_height / 10);
+                left: calc((100% - $block_width) / 2);
+                img
+                {
+                    width: 100%;
+                    aspect-ratio: 2/3;
+                } 
+            }
+        }
+        // min-height: $comics_area_height;
+        background-color: $single_card_color;
+        #single_card
+        {
+            padding: 1.5rem 0;
+            #artists, #writers
+            {
+                width: 45%;
+            }
+        }
     }
 }
