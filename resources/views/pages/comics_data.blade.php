@@ -29,6 +29,9 @@
 @section('main_section')
     <div id="icons_menu_area">
     </div>
+    <div id="single_card_view">
+
+    </div>
     <div id="middle_section">
         <a href="{{ route('main') }}"> Go back to HOME PAGE</a>
         <a href="{{ route('collection') }}"> Go back to COLLECTION</a>

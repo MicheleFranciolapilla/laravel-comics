@@ -31,7 +31,7 @@
         <div id="card_set" class="central py-4">
             @foreach($comics_db as $index => $item)
                 <div class="card">
-                    <a href="{{ route('comics_data') }}">
+                    <a href="{{ route('comics_data', ['index' => $index]) }}">
                         <img src="{{ $item['thumb'] }}" alt="{{ $item['title'] }}">
                         <h6>{{ $item['title'] }}</h6>
                     </a>

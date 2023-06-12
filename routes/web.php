@@ -30,4 +30,4 @@ Route::get('/collection', function()
     return view('pages.collection', compact('title', 'menu', 'comics_db'));
 })->name('collection');
 
-Route::get('/comics_data', [Card_Controller::class, 'get_method'])->name('comics_data');
+Route::get('/comics_data/{index}', [Card_Controller::class, 'get_method'])->name('comics_data');
